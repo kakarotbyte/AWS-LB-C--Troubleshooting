@@ -31,9 +31,9 @@ sudo ln -s /usr/bin/kubectl /usr/local/bin/k
 terraform init
 terraform apply -auto-approve
 
-aws eks wait cluster-active --name one
-aws eks update-kubeconfig --name one
-aws eks wait cluster-active --name two
-aws eks update-kubeconfig --name two
+aws eks wait cluster-active --name one --region us-east-1
+aws eks update-kubeconfig --name one  --region us-east-1
+aws eks wait cluster-active --name two  --region us-east-1
+aws eks update-kubeconfig --name two  --region us-east-1
 
 source /home/ec2-user/.bashrc
