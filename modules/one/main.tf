@@ -78,8 +78,8 @@ module "eks" {
 
    # Terraform's "jsonencode" function converts a
    # Terraform expression result to valid JSON syntax.
-   #policy = file("modules/one/policy.json")
-   policy = file("modules/one/policy-fix.json")
+   policy = file("modules/one/policy.json")
+   #policy = file("modules/one/policy-fix.json")
  }
 
 
