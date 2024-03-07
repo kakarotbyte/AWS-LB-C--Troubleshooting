@@ -162,10 +162,10 @@ resource "helm_release" "lb-2" {
     name  = "image.repository"
     value = "602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-load-balancer-controller"
   }
-  set {
-    name  = "image.tag"
-    value = "v2.4.7"
-  }
+  #set {
+  #  name  = "image.tag"
+  #  value = "v2.4.7"
+  #}
 
   set {
     name  = "serviceAccount.create"
