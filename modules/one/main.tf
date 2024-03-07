@@ -298,8 +298,8 @@ resource "helm_release" "lb" {
    annotations:
      alb.ingress.kubernetes.io/scheme: internet-facing
      alb.ingress.kubernetes.io/target-type: instance
-     alb.ingress.kubernetes.io/manage-backend-security-group-rules: "true"
-     #alb.ingress.kubernetes.io/manage-backend-security-group-rules: "false"
+     #alb.ingress.kubernetes.io/manage-backend-security-group-rules: "true"
+     alb.ingress.kubernetes.io/manage-backend-security-group-rules: "false"
      alb.ingress.kubernetes.io/security-groups: ${module.custom_sg.security_group_id}
  spec:
    ingressClassName: alb
